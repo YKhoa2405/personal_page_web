@@ -48,7 +48,7 @@ export default function Experience() {
           <div className="flex-1 flex flex-col justify-center">
             <h1 className="title-section">Skills and <br />Experience</h1>
             <p className="subtitle-section text-secondary-color">
-              I am a software developer, passionate about building web and mobile applications using <span className="font-bold">ReactJS</span>, <span className="font-bold">React Native</span> and <span className="font-bold">NestJS</span>. Hire me — I’m eager to learn, contribute and grow with your team!
+              I am a software developer, passionate about building web and mobile applications using <span className="font-bold">ReactJS</span>, <span className="font-bold">React Native</span> and <span className="font-bold">NestJS</span>. Hire me — I am eager to learn, contribute and grow with your team!
             </p>
           </div>
           <div className="flex-1 flex flex-col justify-center mt-10">

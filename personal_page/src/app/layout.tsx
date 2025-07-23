@@ -18,8 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="/images/logoweb.png" type="image/x-icon" />
-      <body
-      >
+      <body>
         <Header />
         {children}
         <Footer />
