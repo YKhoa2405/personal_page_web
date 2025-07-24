@@ -53,17 +53,17 @@ export default function Experience() {
           </div>
           <div className="flex-1 flex flex-col justify-center mt-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-8">Skills</h1>
-            <div className="grid grid-cols-2 gap-6 w-full max-w-2xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl mx-auto">
               {skills.map((skill, idx) => (
                 <div
                   key={idx}
-                  className={"item-skill"}
+                  className={"flex items-center border-2 border-black bg-white px-6 py-6 mb-2 mx-2 hover:shadow-[4px_4px_0_0_#19171a] duration-300 transition-all"}
                   style={{ minHeight: 120 }}
                 >
                   <div className="icon-container">
                     {skill.icon}
                   </div>
-                  <span className="text-2xl font-bold text-black">{skill.label}</span>
+                  <span className="text-lg sm:text-2xl font-bold text-black">{skill.label}</span>
                 </div>
               ))}
             </div>

@@ -31,10 +31,6 @@ body {
   @apply text-xl mb-8;
 }
 
-.item-skill {
-  @apply flex items-center border-2 border-black  bg-white px-6 py-6 mb-2 mx-2 hover:shadow-[4px_4px_0_0_#19171a] duration-300 transition-all;
-}
-
 .icon-container {
   @apply w-16 h-16 flex items-center justify-center rounded-full bg-[#fd8127] mr-6;
 }

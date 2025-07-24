@@ -51,7 +51,7 @@ export default function Header() {
       {/* Hamburger button - chỉ hiện trên mobile, nằm bên phải */}
       <div className="flex items-center">
         <button
-          className="md:hidden flex items-center px-3 py-2 border rounded cursor-pointer"
+          className="md:hidden flex items-center px-3 py-2 border-2 border-black rounded cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle navigation"
         >
