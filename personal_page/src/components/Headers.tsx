@@ -46,8 +46,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b-2 border-black flex items-center md:justify-around justify-between px-4 md:px-0 bg-white">
       {/* Logo/title bên trái */}
-    <Image src="/images/logoweb.png" alt="Logo" width={100} height={100} className="w-20 h-20" />
-
+        <Image src="/images/logoweb.png" alt="Logo" width={100} height={100} className="w-16 h-16 md:w-20 md:h-20" />
       {/* Hamburger button - chỉ hiện trên mobile, nằm bên phải */}
       <div className="flex items-center">
         <button

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutSection() {
-    
+
     return (
         <section className="section-main bg-white">
             {/* Left: Text */}
@@ -17,12 +17,32 @@ export default function AboutSection() {
                     href="/images/Mobile_NguyenYKhoa.pdf"
                     target="_blank"
                     className="bg-primary-color text-white font-bold px-8 py-3 rounded w-max
-                             transition duration-300 hover:opacity-80"
+                             transition duration-300 hover:opacity-80 md:text-lg text-base"
                 >
                     See my CV
                 </Link>
             </div>
+            {/* Right: CV Display */}
             <div className="flex-1 flex flex-col justify-center">
+                <div className="bg-gray-50 rounded-lg h-96 pt-4 overflow-hidden">
+                    <iframe
+                        src="/images/Mobile_NguyenYKhoa.pdf"
+                        className="w-full h-full border-0"
+                        title="Nguyen Y Khoa CV"
+                    >
+                        <p className="text-center text-gray-600 py-8">
+                            Your browser doesn't support PDF preview.
+                            <Link
+                                href="/images/Mobile_NguyenYKhoa.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-primary-color hover:underline ml-2"
+                            >
+                                Click here to view CV
+                            </Link>
+                        </p>
+                    </iframe>
+                </div>
             </div>
         </section>
     );

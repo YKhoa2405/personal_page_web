@@ -101,7 +101,7 @@ export default function Experience() {
             <Link
               href="#contact"
               className="bg-primary-color text-white font-bold px-8 py-3 rounded w-max
-                             transition duration-300 hover:opacity-80"
+                             transition duration-300 hover:opacity-80 md:text-lg text-base"
             >
               Hire me
             </Link>
