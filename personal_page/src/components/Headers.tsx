@@ -10,6 +10,7 @@ const navItems = [
   { id: "experience", label: "EXPERIENCE" },
   { id: "projects", label: "PROJECTS" },
   { id: "contact", label: "CONTACT" },
+  { id: "relationships", label: "TEAMS" },
 ];
 
 export default function Header() {
@@ -35,6 +36,15 @@ export default function Header() {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Đóng menu khi nhấn Esc
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsOpen(false);
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 
   // Đóng menu khi chọn 1 nav item
@@ -78,7 +88,11 @@ export default function Header() {
 
       {/* Nav - mobile dropdown */}
       {isOpen && (
-        <nav className="md:hidden absolute top-full left-0 w-full bg-white border-b-2 border-black flex flex-col items-center shadow-lg animate-fade-in">
+        <nav
+          role="navigation"
+          aria-label="Mobile"
+          className="md:hidden absolute top-full left-0 w-full bg-white border-b-2 border-black flex flex-col items-center shadow-lg animate-fade-in z-50"
+        >
           {navItems.map((item) => (
             <Link
               key={item.id}
